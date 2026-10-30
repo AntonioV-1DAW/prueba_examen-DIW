@@ -55,12 +55,11 @@ nav a{
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
-    display: block;
-    float: left;
     margin-right: 100px;
     background-color: transparent;
+    display: inline-block;
 }
-nav a.activo{
+nav li.hover{
     background-color: #07579b;
 }
 #principal{
