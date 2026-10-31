@@ -40,33 +40,33 @@
                 <div id="caja-formulario">
                     <div class="cabecera-form">
                         <h2>Reserva tu ruta</h2>
+                        <form action="resultado.php" method="get"> 
+                            <div class="campo">
+                                <label for="actividad">Actividad *</label>
+                                <select id="actividad" name="actividad">
+                                    <option value="">Selecciona una actividad</option>
+                                    <option value="Senderismo">Senderismo</option>
+                                    <option value="Ciclismo">Ciclismo</option>
+                                    <option value="Montaña">Montaña</option>
+                                </select>
+                            </div>
+                            <div class="campos-fila">
+                                <div class="campoL">
+                                    <label for="fecha">Fecha *</label>
+                                    <input type="text" id="fecha" name="fecha">
+                                </div>
+                                <div class="campoR">
+                                    <label for="personas">Nº personas *</label>
+                                    <input type="text" id="personas" name="personas">
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Comentarios (Opcional)</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tus comentarios..."></textarea>
+                            </div>
+                            <button type="submit" id="reservar">Reservar</button>
+                        </form>
                     </div>
-                    <form action="resultado.php" method="get"> 
-                        <div class="campo">
-                            <label for="actividad">Actividad *</label>
-                            <select id="actividad" name="actividad">
-                                <option value="">Selecciona una actividad</option>
-                                <option value="Senderismo">Senderismo</option>
-                                <option value="Ciclismo">Ciclismo</option>
-                                <option value="Montaña">Montaña</option>
-                            </select>
-                        </div>
-                        <div class="campos-fila">
-                            <div class="campoL">
-                                <label for="fecha">Fecha *</label>
-                                <input type="text" id="fecha" name="fecha">
-                            </div>
-                            <div class="campoR">
-                                <label for="personas">Nº personas *</label>
-                                <input type="text" id="personas" name="personas">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <label for="mensaje">Comentarios (Opcional)</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tus comentarios..."></textarea>
-                        </div>
-                        <button type="submit" id="reservar">Reservar</button>
-                    </form>
                 </div>
                 <div id="secundario">
                     <div id="imagen-secundaria">

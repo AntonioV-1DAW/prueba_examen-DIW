@@ -47,19 +47,36 @@ nav{
     padding: 10px 20px;
     background-color: #5aafe0;
 }
-nav a{
+nav ul li a{
     width: 120px;
     height: 30px;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
+    padding-top: 10px;
     margin-right: 100px;
-    background-color: transparent;
+    text-align: center;
     display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
 }
-nav li.hover{
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+ nav ul li{
+    display: inline-block;
+ }
+
+a[href="#contacto"] {
+    margin-right: 0px;
+}
+a:visited{
+    background-color: #07579B;
+    font-weight: bold;
+}
+li a:hover{
     background-color: #07579b;
 }
 #principal{
@@ -205,7 +222,6 @@ form textarea {
 #imagen-secundaria{
     width: 470px;
     height: 411px;
-    margin-bottom: 25px;
 }
 #ventanas{
     position: relative;
@@ -235,6 +251,9 @@ form textarea {
 #imagen-principal,
 #imagen-secundaria img {
     border-radius: 8px; /* Curvatura en las imágenes */
+}
+img{
+    width: 100%;
 }
 footer{
     width: 1120px;
